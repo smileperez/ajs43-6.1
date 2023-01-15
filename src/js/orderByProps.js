@@ -11,9 +11,9 @@ export default function orderByProps(obj, pattern) {
   const result = [];
 
   for (let i = 0; i < uniqueSet.length; i += 1) {
-    for (const key in obj) {
-      if (uniqueSet[i] === key) {
-        result[i] = { key, value: obj[key] };
+    for (const prop in obj) {
+      if (uniqueSet[i] === prop) {
+        result[i] = { prop, value: obj[prop] };
       }
     }
   }
